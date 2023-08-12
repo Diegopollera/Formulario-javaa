@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        
+        <link rel = "stylesheet" href = "assets/css/style.css">    
+    </head>
+    <body>
+        <div class="parent">
+            <div class="Barra"> 
+                <p><h3>Formulario</h3></p>
+            </div>
+
+
+            <div class="IngresoDatos"> 
+                <form id = "form1">
+                    <label for="nombre">Nombre:</label> <br>
+                    <input type="text" id="nombre" name="nombre" required><br>
+                    
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido" required><br>
+
+                    <label for="dni">DNI:</label><br>
+                    <input type="text" id="dni" name="dni" required><br>
+
+                    <label for="edad">Edad:</label><br>
+                    <input type="text" id="edad" name="edad" required><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" required><br>
+
+                    <label for="numero">Numero:</label><br>
+                    <input type="text" id="numero" name="numero" required><br>
+                    
+                    <button type="button" class="pib" onclick="enviar()">Enviar</button><br>
+                </form>
+
+            </div>
+            <div id="datosM" class="MuestraDatos"> 
+                <h2>Datos:</h2>
+                <p><strong>Nombre:</strong> <span id="nombreMostrado"></span></p> <br>
+                <p><strong>Apellido:</strong> <span id="apellidoMostrado"></span></p> <br>
+                <p><strong>DNI:</strong> <span id="dniMostrado"></span></p> <br>
+                <p><strong>Edad:</strong> <span id="edadMostrado"></span></p> <br>
+                <p><strong>Email:</strong> <span id="emailMostrado"></span></p> <br>
+                <p><strong>Numero:</strong> <span id="numeroMostrado"></span></p> <br>
+            </div>
+            <div class="BotonEnviar"> 
+                <button type="button" class="bip" onclick="mostrar()">Mostrar Datos</button>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
